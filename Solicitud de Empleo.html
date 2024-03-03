@@ -1,0 +1,99 @@
+    <h1>HOJA DE VIDA</h1>
+    <p>Registra tu información para crear tu portafolio.</p>
+
+<form>
+    <h2>DATOS PERSONALES</h2>
+    <div>
+        <label>Nombre Completo</label>
+        <input type="text" id="full-name" placeholder="Ingresa tu nombre completo" required>
+    </div><br>
+    <div>
+        <label>Correo</label>
+        <input type="email" id="email" placeholder="Ingresa tu correo electronico" required>
+    </div><br>
+    <div>
+        <label>Celular</label>
+        <input type="tel" id="phone" placeholder="Ingresa tu numero celular" required>
+    </div><br>
+    <div>
+        <label>Dirección</label>
+        <input type="text" id="address" placeholder="Ingresa tu dirección" required>
+    </div><br>
+    <div>
+        <label>Sobre Mí</label><br>
+        <textarea id="profile" placeholder="Habla sobre tu perfil profesional"></textarea>
+    </div><br>
+    
+    <h2>EDUCACIÓN</h2>
+    <div>
+        <label>Institución</label>
+        <input type="text" id="institution1" placeholder="Nombre de la Institución"/>
+    </div><br>
+    <div>
+        <label>Grado Profesional</label>
+        <select id="degree1">
+            <option disabled selected>Seleccciona una opción</option>
+            <option>Tecnico</option>
+            <option>Tecnologo</option>
+            <option>Profesional</option>
+        </select>
+    </div><br>
+    <div>
+        <label>Fecha de Inicio a Final</label><br>
+        Desde <input type="date" id="graduation1"/>
+        Hasta <input type="date" id="graduation2"/>
+    </div><br>
+<!-- 
+    <input type="button" value="Añadir Mas (Opcional)"><br><br>
+
+    <div id="añadir1">
+        <label>Institución</label>
+        <input id="institution2" placeholder="Nombre de la Institución"/><br>
+
+        <label>Grado Profesional</label>
+        <select id="degree2">
+            <option disabled selected>Seleccciona una opción</option>
+            <option>Tecnico</option>
+            <option>Tecnologo</option>
+            <option>Profesional</option>
+        </select><br>
+
+        <label>Año de Graduación</label>
+        <input type="date" id="graduation2"/>
+    </div><br>
+-->
+    <h2>EXPERIENCIA LABORAL</h2>
+    <div>
+        <label>Empresa</label>
+        <input type="text" id="company1" placeholder="Nombre de la Empresa"/>
+    </div><br>
+    <div>
+        <label>Ocupación</label>
+        <input type="text" id="job1" placeholder="Ingresa tu anterior puesto"/>
+    </div><br>
+    <div>
+        <label>Duración</label><br>
+        Desde <input type="date" id="duration1"/>
+        Hasta <input type="date" id="duration2"/>
+    </div><br>
+    <div>
+        <label>Habilidades</label><br>
+        <textarea id="skills" placeholder="Ingresa tus habilidades para el puesto"></textarea>
+    </div><br>
+
+    <h2>PROYECTOS</h2>
+    <div>
+        <label>Proyecto 1</label><br>
+        <textarea id="project1" placeholder="Ingresa la descripcion del proyecto"></textarea>
+    </div><br>
+    <div>
+        <label>Rol</label>
+        <input type="text" id="role1" placeholder="Ingresa el rol ejercido"/>
+    </div><br>
+    <div>
+        <label>Referiencias</label><br>
+        <textarea id="references" placeholder="Ingresa referencias"></textarea>
+    </div><br>
+    
+    <button type="submit">Enviar</button>
+</form>

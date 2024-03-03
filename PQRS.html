@@ -1,0 +1,38 @@
+    <h1>FORMULARIO PQRS</h1>
+    <p>Informa mediante este formulario el PQRS especificando tu situación.</p>
+
+<form>
+    <h2>DATOS</h2>
+    <div>
+        <label>Nombre Completo</label>
+        <input type="text" id="full-name" placeholder="Ingresa tu nombre completo" required>
+    </div><br>
+    <div>
+        <label>Correo</label>
+        <input type="email" id="email" placeholder="Ingresa tu correo electronico" required>
+    </div>
+
+    <h2>RAZÓN</h2>
+    <div>
+        <label>Categoria</label><br>
+        <select id="category">
+            <option disabled selected>Seleccciona una opción</option>
+            <option>Petición</option>
+            <option>Queja</option>
+            <option>Reclamación</option>
+            <option>Sugerencia</option>
+        </select>
+    </div><br>
+    <div>
+        <label>Descripción</label><br>
+        <textarea id="description" placeholder="Describe la situación" maxlength="2000" cols="50" rows="7" required></textarea>
+    </div><br>
+
+    <div>
+        <label>Archivos Adjuntos</label>
+        <input type="file" id="attachment" accept="image/*, .pdf" multiple>
+        <p>Puede adjuntar archivos de imagen o PDF. El tamaño máximo de archivo es de 25MB.</p>
+    </div>
+    
+    <button type="submit">Enviar</button>
+</form>
