@@ -15,8 +15,8 @@
     <h2>RAZÓN</h2>
     <div>
         <label>Categoria</label><br>
-        <select id="category">
-            <option disabled selected>Seleccciona una opción</option>
+        <select id="category" required>
+            <option value="" disabled selected>Seleccione una opción</option>
             <option>Petición</option>
             <option>Queja</option>
             <option>Reclamación</option>
@@ -27,12 +27,13 @@
         <label>Descripción</label><br>
         <textarea id="description" placeholder="Describe la situación" maxlength="2000" cols="50" rows="7" required></textarea>
     </div><br>
-
     <div>
         <label>Archivos Adjuntos</label>
         <input type="file" id="attachment" accept="image/*, .pdf" multiple>
         <p>Puede adjuntar archivos de imagen o PDF. El tamaño máximo de archivo es de 25MB.</p>
     </div>
     
-    <button type="submit">Enviar</button>
+    <div>
+        <button type="submit" id="finished">Enviar</button>
+    </div>
 </form>

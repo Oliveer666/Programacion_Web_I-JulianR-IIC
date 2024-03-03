@@ -1,0 +1,310 @@
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/cKb1QHEqwcJ
+-->
+
+<div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+    <div class="flex flex-col space-y-1.5 p-6">
+      <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">Book pet daycare</h3>
+      <p class="text-sm text-muted-foreground">Fill out the form below to book a spot for your pet.</p>
+    </div>
+    <div class="p-6">
+      <div class="space-y-6">
+        <div class="space-y-2">
+          <h2 class="text-lg font-medium leading-none tracking-tight">Pet information</h2>
+          <p class="text-sm leading-none text-gray-500 dark:text-gray-400">Enter your pet's information</p>
+        </div>
+        <div class="space-y-2">
+          <label
+            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            for="pet-name"
+          >
+            Pet's name
+          </label>
+          <input
+            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="pet-name"
+            placeholder="Enter your pet&amp;apos;s name"
+          />
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-2">
+            <label
+              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              for="pet-age"
+            >
+              Pet's age
+            </label>
+            <input
+              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              id="pet-age"
+              placeholder="Enter your pet&amp;apos;s age"
+            />
+          </div>
+          <div class="space-y-2">
+            <label
+              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              for="pet-breed"
+            >
+              Pet's breed
+            </label>
+            <input
+              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              id="pet-breed"
+              placeholder="Enter your pet&amp;apos;s breed"
+            />
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label
+            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            for="special-instructions"
+          >
+            Special instructions or notes
+          </label>
+          <textarea
+            class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="special-instructions"
+            placeholder="Enter any special instructions or notes"
+          ></textarea>
+        </div>
+        <div class="space-y-6 border-t border-gray-200 dark:border-gray-800 pt-6">
+          <div class="space-y-2">
+            <h2 class="text-lg font-medium leading-none tracking-tight">Owner information</h2>
+            <p class="text-sm leading-none text-gray-500 dark:text-gray-400">Enter your information</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="owner-name"
+              >
+                Your name
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="owner-name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="contact-info"
+              >
+                Contact information
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="contact-info"
+                placeholder="Enter your contact information"
+              />
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="drop-off"
+              >
+                Preferred drop-off date &amp; time
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="drop-off"
+                type="datetime-local"
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="pick-up"
+              >
+                Preferred pick-up date &amp; time
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="pick-up"
+                type="datetime-local"
+              />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <button
+              type="button"
+              role="checkbox"
+              aria-checked="false"
+              data-state="unchecked"
+              value="on"
+              class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+              id="vaccinations"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="items-center p-6 flex justify-end">
+      <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+        Book
+      </button>
+    </div>
+  </div>
+
+  <!--
+// v0 by Vercel.
+// https://v0.dev/t/blmRDWdzkhr
+-->
+
+<div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+    <div class="flex flex-col space-y-1.5 p-6">
+      <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">Book pet daycare</h3>
+      <p class="text-sm text-muted-foreground">Fill out the form below to book a spot for your pet.</p>
+    </div>
+    <div class="p-6">
+      <div class="space-y-6">
+        <div class="space-y-2">
+          <h2 class="text-lg font-medium leading-none tracking-tight">Pet information</h2>
+          <p class="text-sm leading-none text-gray-500 dark:text-gray-400">Enter your pet's information</p>
+        </div>
+        <div class="space-y-2">
+          <label
+            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            for="pet-name"
+          >
+            Pet's name
+          </label>
+          <input
+            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="pet-name"
+            placeholder="Enter your pet&amp;apos;s name"
+          />
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-2">
+            <label
+              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              for="pet-age"
+            >
+              Pet's age
+            </label>
+            <input
+              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              id="pet-age"
+              placeholder="Enter your pet&amp;apos;s age"
+            />
+          </div>
+          <div class="space-y-2">
+            <label
+              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              for="pet-breed"
+            >
+              Pet's breed
+            </label>
+            <input
+              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              id="pet-breed"
+              placeholder="Enter your pet&amp;apos;s breed"
+            />
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label
+            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            for="special-instructions"
+          >
+            Special instructions or notes
+          </label>
+          <textarea
+            class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="special-instructions"
+            placeholder="Enter any special instructions or notes"
+          ></textarea>
+        </div>
+        <div class="space-y-6 border-t border-gray-200 dark:border-gray-800 pt-6">
+          <div class="space-y-2">
+            <h2 class="text-lg font-medium leading-none tracking-tight">Owner information</h2>
+            <p class="text-sm leading-none text-gray-500 dark:text-gray-400">Enter your information</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="owner-name"
+              >
+                Your name
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="owner-name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="contact-info"
+              >
+                Contact information
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="contact-info"
+                placeholder="Enter your contact information"
+              />
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="drop-off"
+              >
+                Preferred drop-off date &amp; time
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="drop-off"
+                type="datetime-local"
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="pick-up"
+              >
+                Preferred pick-up date &amp; time
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="pick-up"
+                type="datetime-local"
+              />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <button
+              type="button"
+              role="checkbox"
+              aria-checked="false"
+              data-state="unchecked"
+              value="on"
+              class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+              id="vaccinations"
+            ></button>
+            <input
+              aria-hidden="true"
+              tabindex="-1"
+              type="checkbox"
+              value="on"
+              style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="items-center p-6 flex justify-end">
+      <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+        Book
+      </button>
+    </div>
+  </div>

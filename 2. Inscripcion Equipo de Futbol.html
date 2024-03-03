@@ -4,7 +4,7 @@
 <form>
     <div>
         <img src="../Programacion_Web_I/Recursos/PFP.jfif" width="64" height="64" alt="Logo de Equipo"/>
-        <button>Subir Logo</button>
+        <input type="file" id="logo" accept="image/*">
     </div>
     
     <h2>CAPITAN DE EQUIPO</h2>
@@ -18,7 +18,7 @@
     </div>
     <div>
         <label>Edad</label>
-        <input type="number" id="contact-info" placeholder="Ingresa tu edad" min="10" max="18" required>
+        <input type="number" id="age" placeholder="Ingresa tu edad" min="10" max="18" required>
     </div>
     <div>
         <label>Información de Contacto</label>
@@ -26,25 +26,18 @@
     </div>
     <div>
         <label>Nombre de Entrenador</label>
-        <input type="text" id="contact-info" placeholder="Ingresa el nombre de entrenador" required>
+        <input type="text" id="coach-name" placeholder="Ingresa el nombre de entrenador" required>
     </div><br>
 
     <h2>POSICIONES Y HABILIDADES</h2>
     <p>¿En que posicion te defines mas?</p>
-
     <div>
         <input type="checkbox" id="goalkeeper">
-        <label for="goalkeeper">Arquero</label>
-    </div>
-    <div>
+        <label for="goalkeeper">Arquero</label><br>
         <input type="checkbox" id="defender">
-        <label for="defender">Defensas</label>
-    </div>
-    <div>
+        <label for="defender">Defensas</label><br>
         <input type="checkbox" id="midfielder">
-        <label for="midfielder">Puntero</label>
-    </div>
-    <div>
+        <label for="midfielder">Puntero</label><br>
         <input type="checkbox" id="striker">
         <labelstriker">Delanteros</label>
     </div>
@@ -52,7 +45,7 @@
     <p>¿Cual es tu nivel de aprendizaje?</p>
     <div>
         <label>Nivel de Habilidad</label><br>
-        <input type="radio" id="beginner" name="skills">
+        <input type="radio" id="beginner" name="skills" required>
         <label for="beginner">Aprendiz</label>
         <input type="radio" id="intermediate" name="skills">
         <label for="intermediate">Intermedio</label>
@@ -67,8 +60,8 @@
         <label>Edad</label>
         <input type="number" min="10" max="18" id="player1-age" placeholder="Ingresa tu edad" required>
         <label>Posición</label>
-        <select id="player1-position">
-            <option disabled selected>Seleccciona tu posición</option>
+        <select id="player1-position" required>
+            <option value="" disabled selected>Seleccione tu posición</option>
             <option>Arquero</option>
             <option>Defensas</option>
             <option>Puntero</option>
@@ -81,8 +74,8 @@
         <label>Edad</label>
         <input type="number" min="10" max="18" id="player2-age" placeholder="Ingresa tu edad" required>
         <label>Posición</label>
-        <select id="player2-position">
-            <option disabled selected>Seleccciona tu posición</option>
+        <select id="player2-position" required>
+            <option value="" disabled selected>Seleccione tu posición</option>
             <option>Arquero</option>
             <option>Defensas</option>
             <option>Puntero</option>
@@ -95,8 +88,8 @@
         <label>Edad</label>
         <input type="number" min="10" max="18" id="player3-age" placeholder="Ingresa tu edad" required>
         <label>Posición</label>
-        <select id="player3-position">
-            <option disabled selected>Seleccciona tu posición</option>
+        <select id="player3-position" required>
+            <option value="" disabled selected>Seleccione tu posición</option>
             <option>Arquero</option>
             <option>Defensas</option>
             <option>Puntero</option>
@@ -104,7 +97,9 @@
         </select>
     </div><br>
 
-    <button type="submit">Enviar</button>
+    <div>
+        <button type="submit" id="finished">Enviar</button>
+    </div>
 </form>
 
     

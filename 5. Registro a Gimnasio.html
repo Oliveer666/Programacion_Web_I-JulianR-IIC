@@ -1,0 +1,51 @@
+    <h1>REGISTRO A GIMNASIO</h1>
+    <p>Registra la información para ser miembro al gimnasio.</p>
+
+<form>
+    <h2>DATOS PERSONALES</h2>
+    <div>
+        <label>Nombre Completo</label>
+        <input type="text" id="full-name" placeholder="Ingresa tu nombre completo" required>
+    </div><br>
+    <div>
+        <label>Celular</label>
+        <input type="tel" id="phone" placeholder="Ingresa tu numero celular" required>
+    </div><br>
+    <div>
+        <label>Edad</label>
+        <input type="number" id="age" placeholder="Ingresa tu edad" min="17" max="45" required>
+    </div>
+
+    <h2>SERVICIOS</h2>
+    <div>
+        <label>Plan de Membresía</label><br>
+        <input type="radio" id="basic" name="membership-plan" required>
+        <label for="basic">Basico</label>
+        <input type="radio" id="standard" name="membership-plan">
+        <label for="standard">Estandar</label>
+        <input type="radio" id="premium" name="membership-plan">
+        <label for="premium">Premium</label>
+    </div><br>
+
+    <div>
+        <label>Tiempo de Membresía</label><br>
+        <input type="radio" id="monthly" name="membership-time" required>
+        <label for="monthly">Mensual</label>
+        <input type="radio" id="quarterly" name="membership-time">
+        <label for="quarterly">Trimestral</label>
+        <input type="radio" id="annual" name="membership-time">
+        <label for="annual">Anual</label>
+    </div><br>
+
+    <label>Servicios Adicionales (Opcional)</label>
+    <div>
+        <input type="checkbox" id="personal-training">
+        <label for="personal-training">Entrenamiento Personal</label><br>
+        <input type="checkbox" id="group-classes">
+        <label for="group-classes">Clases Grupales</label>
+    </div><br>
+    
+    <div>
+        <button type="submit" id="finished">Enviar</button>
+    </div>
+</form>
