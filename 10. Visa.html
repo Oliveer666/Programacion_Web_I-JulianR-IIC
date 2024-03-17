@@ -1,0 +1,85 @@
+    <h1>VISA</h1>
+    <p>Registra la información para autorización del visado.</p>
+
+<form>
+    <h2>DATOS PERSONALES</h2>
+    <div>
+        <label>Nombre Completo</label>
+        <input type="text" id="full-name" placeholder="Ingresa tu nombre completo" required>
+    </div><br>
+    <div>
+        <label>Fecha de Nacimiento</label>
+        <input type="date" id="birth" required>
+    </div><br>
+    <div>
+        <label>Nacionalidad</label>
+        <input type="text" id="nationality" placeholder="Ingresa la nacionalidad" required>
+    </div><br>
+    <div>
+        <label>Numero de Pasaporte</label>
+        <input type="number" id="passport" placeholder="Ingresa el numero de tu pasaporte" required>
+    </div><br>
+
+    <h2>INFORMACIÓN DE CONTACTO</h2>
+    <div>
+        <label>Dirección</label>
+        <input type="text" id="address" placeholder="Ingresa tu dirección" required>
+    </div><br>
+    <div>
+        <label>Celular</label>
+        <input type="tel" id="phone" placeholder="Ingresa tu numero celular" required>
+    </div><br>
+    <div>
+        <label>Correo</label>
+        <input type="email" id="email" placeholder="Ingresa tu correo electronico" required>
+    </div><br>
+
+    <h2>DETALLES DEL VIAJE</h2>
+    <div>
+        <label>Propósito del Viaje</label><br>
+        <textarea id="purpose" placeholder="Razon del viaje" maxlength="2000" cols="50" rows="7" required></textarea>
+    </div><br>
+    <div>
+        <label>Duración de la Estancia</label>
+        <select id="date-stay" required>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option>Dias</option>
+            <option>Meses</option>
+            <option>Años</option>
+        </select>
+        <input type="number" id="duration-stay" placeholder="Ingresa el tiempo de estadia" min="1" required>
+    </div><br>
+    <div>
+        <label>Fecha Predefinida del Viaje</label><br>
+        <label>Cronograma Prevista de Llegada</label>
+        <input type="date" id="start" required><br>
+        <label>Cronograma Prevista de Salida</label>
+        <input type="date" id="end" required>
+    </div><br>
+
+    <h2>ANEXO DE DOCUMENTOS</h2>
+    <div>
+        <label>Documento de Identidad</label>
+        <input type="file" id="attachment" accept="image/*, .pdf" required><br>
+        <label>Puede adjuntar archivos de imagen o PDF. El tamaño máximo de archivo es de 5MB.</label>
+    </div><br>
+    <div>
+        <label>Pasaporte</label>
+        <input type="file" id="attachment" accept="image/*, .pdf" required><br>
+        <label>Puede adjuntar archivos de imagen o PDF. El tamaño máximo de archivo es de 5MB.</label>
+    </div><br>
+    <div>
+        <label>Fotografía</label>
+        <input type="file" id="attachment" accept="image/*, .pdf" required><br>
+        <label>Puede adjuntar archivos de imagen o PDF. El tamaño máximo de archivo es de 5MB.</label>
+    </div><br>
+    <div>
+        <label>Otros Documentos</label>
+        <input type="file" id="attachment" accept="image/*, .pdf" required><br>
+        <label>Puede adjuntar archivos de imagen o PDF. El tamaño máximo de archivo es de 5MB.</label>
+    </div><br>
+
+    <div>
+        <button type="submit" id="finished">Enviar</button>
+    </div>
+</form>

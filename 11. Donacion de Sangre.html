@@ -1,0 +1,40 @@
+<h1>DONACIÓN DE SANGRE</h1>
+<p>Rellena el formulario si deseas donar sangre a esta campaña.</p>
+
+<form>
+    <h2>DATOS PERSONALES</h2>
+    <div>
+        <label>Nombre Completo</label>
+        <input type="text" id="full-name" placeholder="Ingresa tu nombre completo" required>
+    </div><br>
+    <div>
+        <label>Celular</label>
+        <input type="tel" id="phone" placeholder="Ingresa tu numero celular" required>
+    </div><br>
+    <div>
+        <label>Correo</label>
+        <input type="email" id="email" placeholder="Ingresa tu correo electronico" required>
+    </div><br>
+    <div>
+        <label>Tipo de Sangre</label>
+        <select id="blood" required>
+            <option value="" disabled selected>Seleccione tu posición</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+    </div><br>
+    <div>
+        <label>Comentarios</label><br>
+        <textarea id="comments" placeholder="Nota adiccional" maxlength="2000" cols="50" rows="7"></textarea>
+    </div><br>
+
+    <div>
+        <button type="submit" id="finished">Enviar</button>
+    </div>
+</form>

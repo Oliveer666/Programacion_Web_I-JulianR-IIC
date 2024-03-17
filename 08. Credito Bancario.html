@@ -1,0 +1,64 @@
+    <h1>CRÉDITO BANCARIO</h1>
+    <p>Registra la información para realizar tu prestamo bancario.</p>
+
+<form>
+    <h2>DATOS PERSONALES</h2>
+    <div>
+        <label>Nombres</label>
+        <input type="text" id="names" placeholder="Ingresa tu nombre" required>
+    </div><br>
+    <div>
+        <label>Apellidos</label>
+        <input type="text" id="surnames" placeholder="Ingresa tu apellido" required>
+    </div><br>
+    <div>
+        <label>Dirección</label>
+        <input type="text" id="address" placeholder="Ingresa tu dirección" required>
+    </div><br>
+    <div>
+        <label>Celular</label>
+        <input type="tel" id="phone" placeholder="Ingresa tu numero celular" required>
+    </div><br>
+    <div>
+        <label>Correo</label>
+        <input type="email" id="email" placeholder="Ingresa tu correo electronico" required>
+    </div><br>
+    <div>
+        <label>Numero de Seguro Social</label>
+        <input type="number" id="ssn" placeholder="Ingresa tu SSN" required>
+    </div><br>
+
+    <h2>DETALLES DEL PRÉSTAMO</h2>
+    <div>
+        <label>Monto del Préstamo</label>
+        <input type="number" id="amount" placeholder="Ingresa la cantidad del monto" required>
+    </div><br>
+    <div>
+        <label>Proposito del crédito</label><br>
+        <textarea id="purpose" placeholder="Razon del crédito a sacar" maxlength="2000" cols="50" rows="7" required></textarea>
+    </div><br>
+    <div>
+        <label>Plazo de pago deseado</label>
+        <input type="date" id="payment" required>
+    </div><br>
+
+    <h2>INFORMACIÓN DE EMPLEO</h2>
+    <div>
+        <div>
+            <label>Empresa</label>
+            <input type="text" id="company" placeholder="Nombre de la empresa" required>
+        </div><br>
+        <div>
+            <label>Ocupación</label>
+            <input type="text" id="job" placeholder="Ingresa tu puesto laboral" required>
+        </div><br>
+        <div>
+            <label>Ingreso Mensual</label>
+            <input type="number" id="income" placeholder="Ingresa los ingresos mensuales" required>
+        </div><br>
+    </div>
+
+    <div>
+        <button type="submit" id="finished">Enviar</button>
+    </div>
+</form>

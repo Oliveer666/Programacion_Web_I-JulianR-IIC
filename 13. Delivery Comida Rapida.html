@@ -1,0 +1,143 @@
+    <h1>ENTREGA DE COMIDA RAPIDA</h1>
+    <p>Registra la información para el pedido de tu comida.</p>
+
+<form>
+    <h2>DATOS PERSONALES</h2>
+    <div>
+        <label>Nombre Completo</label>
+        <input type="text" id="full-name" placeholder="Ingresa tu nombre completo" required>
+    </div><br>
+    <div>
+        <label>Dirección</label>
+        <input type="text" id="address" placeholder="Ingresa tu dirección" required>
+    </div><br>
+    <div>
+        <label>Celular</label>
+        <input type="tel" id="phone" placeholder="Ingresa tu numero celular" required>
+    </div><br>
+
+    <h2>ORDEN</h2>
+    <div>
+        <table>
+            <thead>
+                <div>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </div>
+            </thead>
+            <tbody>
+                <div>
+                    <tr>
+                        <td>
+                            <label>Helado</label>
+                        </td>
+                        <td>
+                            <label>$ 2.30</label>
+                        </td>
+                        <td>
+                            <input type="number" id="amount1" placeholder="Ingresa la cantidad" min="0" max="100" required>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label>Palomitas</label>
+                        </td>
+                        <td>
+                            <label>$ 5.80</label>
+                        </td>
+                        <td>
+                            <input type="number" id="amount" placeholder="Ingresa la cantidad" min="0" max="100" required>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label>Coca Cola</label>
+                        </td>
+                        <td>
+                            <label>$ 1.60</label>
+                        </td>
+                        <td>
+                            <input type="number" id="amount2" placeholder="Ingresa la cantidad" min="0" max="100" required>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label>Cafe</label>
+                        </td>
+                        <td>
+                            <label>$ 2.00</label>
+                        </td>
+                        <td>
+                            <input type="number" id="amount3" placeholder="Ingresa la cantidad" min="0" max="100" required>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label>Perro Caliente</label>
+                        </td>
+                        <td>
+                            <label>$ 4.50</label>
+                        </td>
+                        <td>
+                            <input type="number" id="amount" placeholder="Ingresa la cantidad" min="0" max="100" required>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label>Hamburguesa</label>
+                        </td>
+                        <td>
+                            <label>$ 7.60</label>
+                        </td>
+                        <td>
+                            <input type="number" id="amount" placeholder="Ingresa la cantidad" min="0" max="100" required>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label>Papas Fritas</label>
+                        </td>
+                        <td>
+                            <label>$ 3.30</label>
+                        </td>
+                        <td>
+                            <input type="number" id="amount" placeholder="Ingresa la cantidad" min="0" max="100" required>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label>Pizza</label>
+                        </td>
+                        <td>
+                            <label>$ 9.70</label>
+                        </td>
+                        <td>
+                            <input type="number" id="amount" placeholder="Ingresa la cantidad" min="0" max="100" required>
+                        </td>
+                    </tr>
+                </div>
+            </tbody>
+        </table>
+    </div><br>
+
+    <div>
+        <button type="submit" id="finished">Enviar</button>
+    </div>
+</form>

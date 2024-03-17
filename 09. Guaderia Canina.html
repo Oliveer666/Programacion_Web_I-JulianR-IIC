@@ -1,0 +1,52 @@
+    <h1>GUARDERÍA CANINA</h1>
+    <p>Rellena los datos para el alojamiento de tu mascota.</p>
+
+<form>
+    <h2>DATOS PERSONALES</h2>
+    <div>
+        <label>Nombre Completo</label>
+        <input type="text" id="full-name" placeholder="Ingresa tu nombre completo" required>
+    </div><br>
+    <div>
+        <label>Correo</label>
+        <input type="email" id="email" placeholder="Ingresa tu correo electronico" required>
+    </div><br>
+    <div>
+        <label>Celular</label>
+        <input type="tel" id="phone" placeholder="Ingresa tu numero celular" required>
+    </div><br>
+    <div>
+        <label>Fecha y Hora</label><br>
+        <label>Entrega Preferida</label>
+        <input type="datetime-local" id="start" required><br>
+        <label>Recogida Preferida</label>
+        <input type="datetime-local" id="end" required>
+    </div><br>
+
+    <h2>DATOS DE LA MASCOTA</h2>
+    <div>
+        <label>Nombre de la Mascota</label>
+        <input type="text" id="dog-name" placeholder="Ingresa el nombre de tu mascota" required>
+    </div><br>
+    <div>
+        <label>Raza de la Mascota</label>
+        <input type="text" id="breed" placeholder="Ingresa la raza de tu mascota" required>
+    </div><br>
+    <div>
+        <label>Edad</label>
+        <select id="age-date" required>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option>Meses</option>
+            <option>Años</option>
+        </select>
+        <input type="number" id="age" placeholder="Ingresa la edad de tu mascota" min="1" max="30" required>
+    </div><br>
+    <div>
+        <label>Instrucciones o Notas Especiales</label><br>
+        <textarea id="notes" placeholder="Especifica instrucciones o cuidados especiales que necesite tu mascota" maxlength="2000" cols="50" rows="7"></textarea>
+    </div><br>
+    
+    <div>
+        <button type="submit" id="finished">Enviar</button>
+    </div>
+</form>
